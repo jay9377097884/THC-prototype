@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | True Harvest Cocoa</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="brand-logo">
+          <div class="brand-logo-icon">K</div>
+          <div>
+            True Harvest Cocoa
+            <span class="brand-tag">SUSTAINABLE AGRI-TRADE</span>
+          </div>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">☰</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="model.html" class="nav-link">Our Model</a></li>
+          <li><a href="impact.html" class="nav-link">Impact & Resources</a></li>
+          <li><a href="contact.html" class="nav-cta active">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="section-header" style="margin-bottom: 0;">
+        <div class="section-subtitle">Get In Touch</div>
+        <h1 class="hero-title">Partner with True Harvest Cocoa</h1>
+        <p class="hero-description">
+          We welcome inquiries from chocolate manufacturers, importers, agricultural partners, and prospective stakeholders.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form & Business Details Section -->
+  <section class="section">
+    <div class="container">
+      <div class="grid-2">
+        <!-- Contact Information Side -->
+        <div>
+          <div class="section-subtitle">Business Contact</div>
+          <h2 class="section-title">Direct Communication Channels</h2>
+          <p class="card-text" style="margin-bottom: 2rem;">
+            Whether you require sample batches, contractual details, or corporate briefings, our dedicated trade team is available to assist.
+          </p>
+
+          <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+            <div class="card" style="display: flex; gap: 1.25rem; align-items: flex-start; padding: 1.5rem;">
+              <div style="font-size: 1.75rem; color: var(--accent-gold);">📧</div>
+              <div>
+                <h4 style="color: var(--primary-dark); font-weight: 700;">Email Enquiries</h4>
+                <p class="card-text" style="font-size: 0.95rem;">inquiries@trueharvestcocoa.com</p>
+                <p class="card-text" style="font-size: 0.85rem; color: var(--text-muted);">Response time: within 24 business hours</p>
+              </div>
+            </div>
+
+            <div class="card" style="display: flex; gap: 1.25rem; align-items: flex-start; padding: 1.5rem;">
+              <div style="font-size: 1.75rem; color: var(--accent-gold);">📞</div>
+              <div>
+                <h4 style="color: var(--primary-dark); font-weight: 700;">Telephone & WhatsApp</h4>
+                <p class="card-text" style="font-size: 0.95rem;">+1 (555) 019-2834</p>
+                <p class="card-text" style="font-size: 0.85rem; color: var(--text-muted);">Mon – Fri: 8:00 AM – 6:00 PM (EST)</p>
+              </div>
+            </div>
+
+            <div class="card" style="display: flex; gap: 1.25rem; align-items: flex-start; padding: 1.5rem;">
+              <div style="font-size: 1.75rem; color: var(--accent-gold);">🏢</div>
+              <div>
+                <h4 style="color: var(--primary-dark); font-weight: 700;">Corporate Headquarters</h4>
+                <p class="card-text" style="font-size: 0.95rem;">
+                  100 Innovation Way, Suite 400<br>
+                  Toronto, ON M5V 2T6, Canada
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Professional Enquiry Form -->
+        <div class="card" style="padding: 2.5rem; background-color: #fff;">
+          <h3 class="card-title" style="margin-bottom: 0.5rem;">Send a Stakeholder Enquiry</h3>
+          <p class="card-text" style="margin-bottom: 2rem; font-size: 0.9rem;">
+            Please complete the form below. Required fields are indicated with an asterisk (*).
+          </p>
+
+          <form id="enquiryForm">
+            <div class="form-group">
+              <label for="fullName" class="form-label">Full Name *</label>
+              <input type="text" id="fullName" class="form-control" placeholder="e.g. Sarah Jenkins" required>
+            </div>
+
+            <div class="form-group">
+              <label for="orgName" class="form-label">Company / Organization *</label>
+              <input type="text" id="orgName" class="form-control" placeholder="e.g. Artisan Chocolate Co." required>
+            </div>
+
+            <div class="grid-2" style="gap: 1rem;">
+              <div class="form-group">
+                <label for="email" class="form-label">Business Email *</label>
+                <input type="email" id="email" class="form-control" placeholder="s.jenkins@artisan.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" id="phone" class="form-control" placeholder="+1 (555) 000-0000">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="enquiryType" class="form-label">Enquiry Category *</label>
+              <select id="enquiryType" class="form-control" required>
+                <option value="" disabled selected>Select category...</option>
+                <option value="bulk_purchasing">Bulk Cocoa Purchasing / Contracting</option>
+                <option value="single_origin">Single-Origin Sample Request</option>
+                <option value="partnership">Farmer Cooperative Partnership</option>
+                <option value="investor">Investor / Stakeholder Enquiry</option>
+                <option value="other">General Question</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Message Details *</label>
+              <textarea id="message" class="form-control" placeholder="Please describe your requirements, expected volumes, or project timeline..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+              Submit Official Enquiry →
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick WhatsApp Direct Bar -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="card" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem; background: linear-gradient(135deg, var(--primary-dark), var(--primary-main)); color: #fff;">
+        <div>
+          <h3 style="font-size: 1.4rem; font-weight: 700; color: var(--accent-gold); margin-bottom: 0.25rem;">Prefer Instant Messaging?</h3>
+          <p style="color: #D6C8C1; font-size: 0.95rem;">Connect directly with our client communications lead on WhatsApp.</p>
+        </div>
+        <a href="https://wa.me/15550192834" target="_blank" class="btn" style="background-color: #25D366; color: #fff;">
+          💬 Chat on WhatsApp Now
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating WhatsApp Chat Integration -->
+  <div class="whatsapp-widget">
+    <div class="whatsapp-tooltip">Chat with us on WhatsApp</div>
+    <button class="whatsapp-btn" id="whatsappBtn" aria-label="Open WhatsApp Chat">
+      💬
+    </button>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">True Harvest Cocoa</div>
+          <p class="footer-text">
+            A corporate platform committed to transparent, sustainable, and high-impact cocoa sourcing across global supply networks.
+          </p>
+        </div>
+        <div>
+          <h4 class="footer-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="model.html">Our Model</a></li>
+            <li><a href="impact.html">Impact & Resources</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Key Areas</h4>
+          <ul class="footer-links">
+            <li><a href="model.html">Sustainable Sourcing</a></li>
+            <li><a href="impact.html">Community Support</a></li>
+            <li><a href="impact.html">Sustainability Reports</a></li>
+            <li><a href="contact.html">Trade Enquiries</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Corporate Office</h4>
+          <p class="footer-text" style="margin-bottom: 0.5rem;"><strong>True Harvest Cocoa Headquarters</strong></p>
+          <p class="footer-text">Email: info@trueharvestcocoa.com</p>
+          <p class="footer-text">Phone: +1 (555) 019-2834</p>
+
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 True Harvest Cocoa. All rights reserved.</div>
+        <div>Website Design & Development Proposal Prototype</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
